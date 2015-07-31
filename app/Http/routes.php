@@ -19,4 +19,4 @@
 Route::get('/','PagesController@Index');
 Route::get('about','PagesController@about');
 
-Route::get('student/{id}','StudentController@show');
+Route::get('student','StudentController@showStudent');

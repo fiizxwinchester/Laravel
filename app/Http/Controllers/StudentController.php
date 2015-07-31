@@ -17,11 +17,10 @@ class StudentController extends Controller
     }
 
     
-    public function show($id)
+    public function showStudent()
     {
-        $student = Student::getStudent($id);
-        $studentclass = $student->getStudentClass;
-        return view('pages.student',['studentview'=>$student,'studentclass'=>$studentclass]);
+        $student = Student::all();
+        return view('pages.student',['studentview'=>$student]);
     }
 
    
